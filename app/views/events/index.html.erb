@@ -1,1 +1,4 @@
-events#index page
+<h1>This is the list of all events</h1>
+<% @events.each do |event|  %>
+  <%=render 'single_event', event: event %>
+<% end %>
