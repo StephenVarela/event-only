@@ -1,2 +1,6 @@
 <h1>This is the view for single event</h1>
   <%=render 'single_event', event: @event %>
+  <p>
+    <%= link_to "Edit", edit_event_path(@event)%>
+    | <%= link_to "Delete", edit_event_path(@event)%>
+  </p>

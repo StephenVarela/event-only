@@ -1,4 +1,8 @@
 <h1>This is the list of all events</h1>
+
+<h3> <%= link_to('Create New Event', new_event_path) %>  </h3>
 <% @events.each do |event|  %>
   <%=render 'single_event', event: event %>
+  <p> <%= link_to "View", event_path(event)%></p>
+  <hr>
 <% end %>
